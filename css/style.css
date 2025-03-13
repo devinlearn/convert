@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', san-serif;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/bg-portfolio.jpg);
+    background-size: cover;
+    background-position: center 30%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+}
+
+.logo:hover {
+    color: #00b4d8;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 22px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    transform:  .4s;
+    color: #00b4d8;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.main h1 {
+    color: white;
+    font-size: 65px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.main h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #00b4d8; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #00b4d8; }
+  }
+
+span {
+    color: #00b4d8;
+}
+
+.main p {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.main a {
+    display: inline-block;
+    background-color: #00b4d8;
+    color: white;
+    padding: 12px 30px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.main a:hover {
+    background: transparent;
+    border: 2px solid #00b4d8;
+    color: white;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.service h2 {
+    font-family: 'Montserrat', serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
